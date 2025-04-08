@@ -1077,4 +1077,5 @@ Buat sistem pemantauan tegangan baterai sederhana menggunakan pembagi tegangan.
 
 ---
 
-**Modul berikutnya**: Komunikasi dan Tampilan dengan ESP32-S3
+[➡️ Lanjut ke Modul 3: Komunikasi dan Tampilan dengan ESP32-S3](https://github.com/micro-boy/microcontroller-esp32s3-arduino/blob/main/modul-3.md)
+---
