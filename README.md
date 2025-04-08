@@ -1,167 +1,189 @@
-# 🔌 Pembelajaran Microcontroller dengan ESP32 S3
+# 🔌 Microcontroller dengan ESP32-S3
 
 <div align="center">
-  <img src="https://docs.espressif.com/projects/esp-idf/en/stable/esp32s3/_images/esp32-s3-devkitc-1-v1.1-isometric.png" width="400" alt="ESP32-S3 DevKit">
-
-  ![Arduino Compatible](https://img.shields.io/badge/Arduino-Compatible-brightgreen)
-  ![License](https://img.shields.io/badge/License-MIT-blue)
-  ![Status](https://img.shields.io/badge/Status-Active-success)
+  <img src="https://docs.espressif.com/projects/esp-idf/en/latest/esp32s3/_images/ESP32-S3_DevKitC-1_pinlayout.png" width="600">
+  <p><em>ESP32-S3 Development Board</em></p>
   
-  *Materi perkuliahan microcontroller modern dengan ESP32 S3*
+  ![GitHub last commit](https://img.shields.io/github/last-commit/yourusername/esp32s3-microcontroller-course)
+  ![License](https://img.shields.io/badge/License-MIT-blue.svg)
+  ![Arduino IDE](https://img.shields.io/badge/Arduino_IDE-Compatible-brightgreen)
 </div>
 
----
+## 📚 Deskripsi Kuliah
 
-## 📚 Tentang Mata Kuliah
+Selamat datang di kuliah **Microcontroller dengan ESP32-S3**! 
 
-Repositori ini berisi seluruh materi untuk mata kuliah **Microcontroller** yang menggunakan platform ESP32 S3. Dirancang untuk mahasiswa teknik elektronika, informatika, dan bidang terkait lainnya, mata kuliah ini memberikan pemahaman komprehensif tentang sistem tertanam (embedded systems) modern.
+Kuliah ini dirancang untuk memperkenalkan Anda pada dunia menarik microcontroller modern menggunakan ESP32-S3, sebuah chip yang menggabungkan performansi tinggi, konektivitas, dan kemampuan AI. Selama perkuliahan, kita akan bergerak dari konsep dasar hingga aplikasi canggih yang relevan dengan kebutuhan industri saat ini.
 
-Dengan fokus pada pendekatan hands-on dan project-based learning, mata kuliah ini menggabungkan teori dengan praktik langsung menggunakan ESP32 S3, sebuah microcontroller canggih dengan fitur-fitur seperti dual-core processor, WiFi, Bluetooth, dan Neural Network Accelerator.
+Repositori ini berisi semua materi kuliah, contoh kode, skema rangkaian, dan proyek yang akan kita bahas bersama. Semua materi disusun dalam format Markdown untuk kemudahan pembacaan dan akses.
 
 ## 🎯 Tujuan Pembelajaran
 
-Setelah menyelesaikan mata kuliah ini, mahasiswa diharapkan dapat:
+Setelah menyelesaikan kuliah ini, Anda akan mampu:
 
-- Memahami arsitektur dan prinsip kerja sistem microcontroller modern
-- Mendesain dan mengimplementasikan solusi embedded systems untuk masalah dunia nyata
-- Mengembangkan aplikasi IoT menggunakan konektivitas WiFi dan Bluetooth
-- Mengimplementasikan teknik power management untuk aplikasi low-power
-- Mengintegrasikan berbagai sensor dan aktuator dengan microcontroller
-- Menerapkan konsep edge computing dan machine learning pada perangkat embedded
+1. **Memahami** konsep dasar dan arsitektur microcontroller modern
+2. **Mengkonfigurasi** lingkungan pengembangan Arduino IDE untuk ESP32-S3
+3. **Mengimplementasikan** berbagai aplikasi input/output digital dan analog
+4. **Memanfaatkan** protokol komunikasi (UART, I2C, SPI) untuk menghubungkan sensor dan aktuator
+5. **Merancang** aplikasi dengan konektivitas nirkabel (WiFi dan Bluetooth)
+6. **Mengembangkan** sistem multitasking dan real-time dengan FreeRTOS
+7. **Menerapkan** praktik penghematan daya untuk aplikasi baterai
+8. **Mengintegrasikan** machine learning sederhana pada edge device
+9. **Membangun** proyek lengkap berbasis ESP32-S3 yang siap digunakan
 
-## 🧩 Prasyarat
 
-Untuk mengikuti mata kuliah ini dengan baik, mahasiswa diharapkan memiliki:
 
-- Pengetahuan dasar tentang pemrograman (ideally C/C++)
-- Pemahaman dasar tentang rangkaian elektronika
-- Kemampuan analisis dan pemecahan masalah
-- Laptop dengan sistem operasi Windows, macOS, atau Linux
-- Board ESP32 S3 (akan diinformasikan spesifikasi yang dibutuhkan)
+## 📝 Daftar Modul
 
-## 🛠️ Persiapan Lingkungan Pengembangan
+Kuliah ini terdiri dari 15 modul terstruktur yang membangun pengetahuan Anda secara progresif:
 
-Mata kuliah ini menggunakan **Arduino IDE** sebagai platform pengembangan utama. Lihat [Modul 1](./modul1/) untuk petunjuk lengkap tentang:
+### Modul 1: Pengenalan dan Persiapan
+- Pengenalan Microcontroller dan ESP32-S3
+- Mempersiapkan Lingkungan Arduino IDE
 
-- Instalasi Arduino IDE
-- Konfigurasi untuk ESP32 S3
-- Pengaturan board dan driver
-- Testing komunikasi dengan board
+### Modul 2: Dasar-Dasar Input/Output
+- Kendali GPIO Digital
+- Pemrosesan Sinyal Analog
 
-## 📖 Struktur Materi
+### Modul 3: Komunikasi dan Tampilan
+- Komunikasi Serial dan Protokol
+- Menghubungkan Display dan Antarmuka Pengguna
 
-Mata kuliah ini terdiri dari 8 modul utama:
+### Modul 4: Pemrograman Lanjutan
+- Interupsi dan Timer Hardware
+- Manajemen Memori dan Penyimpanan
 
-### [Modul 1: Pengenalan Embedded Systems dan ESP32 S3](./modul1/)
-- Dasar-dasar sistem tertanam (embedded systems)
-- Arsitektur dan fitur ESP32 S3
-- Persiapan lingkungan pengembangan
-- Program pertama: LED berkedip
-- Teknik debugging dasar
+### Modul 5: Konektivitas Nirkabel
+- WiFi dan Konektivitas Internet
+- Bluetooth dan Komunikasi Nirkabel Lainnya
 
-### [Modul 2: Pemrograman dan Peripheral Dasar](./modul2/)
-- Fundamental pemrograman embedded
-- GPIO dan debouncing
-- Timer dan PWM
-- Analog-to-Digital Conversion
-- Interfacing dengan sensor dasar
+### Modul 6: Fitur Lanjutan ESP32-S3
+- Multitasking dengan FreeRTOS
+- Manajemen Daya
 
-### [Modul 3: Komunikasi Protokol](./modul3/)
-- Komunikasi Serial (UART)
-- Protokol I²C dan implementasi
-- SPI dan perangkat eksternal
-- Display interfacing (OLED, LCD)
+### Modul 7: Aplikasi Modern dan Proyek Terintegrasi
+- Machine Learning pada ESP32-S3
+- Keamanan dan OTA Updates
+- Proyek Akhir Terintegrasi
 
-### [Modul 4: Konektivitas Wireless](./modul4/)
-- Konfigurasi WiFi (Station & Access Point)
-- Bluetooth Low Energy (BLE)
-- Web server dan RESTful API
-- Over-The-Air (OTA) updates
+## 💻 Prasyarat
 
-### [Modul 5: RTOS dan Multitasking](./modul5/)
-- Konsep FreeRTOS
-- Task management
-- Synchronization (semaphore, mutex)
-- Communication (queue, event groups)
+Untuk mengikuti kuliah ini dengan optimal, Anda memerlukan:
 
-### [Modul 6: Internet of Things](./modul6/)
-- Protokol IoT (MQTT, HTTP)
-- Cloud integration
-- Dashboard visualization
-- Security best practices
+### Pengetahuan Dasar
+- Pemahaman dasar pemrograman (variabel, loop, kondisi)
+- Konsep dasar elektronika (tegangan, arus, resistor)
+- Tidak diperlukan pengetahuan mendalam tentang microcontroller sebelumnya
 
-### [Modul 7: Power Management](./modul7/)
-- Sleep modes
-- Wake-up sources
-- Battery-powered design
-- Energy harvesting concepts
+### Perangkat Keras
+- Board ESP32-S3 (disarankan: ESP32-S3-DevKitC-1 atau ESP32-S3-WROOM)
+- Kabel USB (Type-C atau sesuai dengan board Anda)
+- Breadboard dan kabel jumper
+- Komponen dasar (LED, resistor, pushbutton, potensiometer)
+- Sensor umum (suhu, cahaya, dsb. - detail di setiap modul)
 
-### [Modul 8: Edge Computing dan Machine Learning](./modul8/)
-- TinyML concepts
-- Sensor data processing
-- Machine learning inferencing
-- Praktik dengan TensorFlow Lite Micro
+### Perangkat Lunak
+- Arduino IDE (versi 2.0 atau yang lebih baru) 
+- Driver USB sesuai dengan board ESP32-S3 Anda
+- Git (opsional, untuk cloning repositori)
 
-## 📝 Format Perkuliahan
+## 🚀 Memulai
 
-Setiap modul terdiri dari:
+### Kloning Repositori
 
-- **Materi Teori**: Konsep dasar dan pengetahuan teknis
-- **Tutorial Langkah-demi-Langkah**: Panduan praktis untuk implementasi
-- **Latihan Praktikum**: Tugas hands-on untuk memperkuat pemahaman
-- **Proyek Mini**: Aplikasi praktis dari konsep yang dipelajari
-- **Quiz**: Evaluasi pemahaman materi
+```bash
+git clone https://github.com/yourusername/esp32s3-microcontroller-course.git
+cd esp32s3-microcontroller-course
+```
 
-## 🚀 Proyek Akhir
+### Mengatur Lingkungan
 
-Sebagai puncak dari mata kuliah ini, mahasiswa akan mengembangkan proyek akhir yang mengintegrasikan berbagai konsep yang telah dipelajari. Proyek ini akan melewati beberapa milestone:
+1. Instal Arduino IDE dari [arduino.cc/en/software](https://arduino.cc/en/software)
+2. Tambahkan dukungan ESP32-S3 ke Arduino IDE (detail di [PERSIAPAN.md](PERSIAPAN.md))
+3. Instal library yang diperlukan (detail per modul)
+4. Siapkan hardware sesuai dengan modul yang sedang dipelajari
 
-1. **Proposal Proyek**: Definisi masalah dan solusi yang diusulkan
-2. **Design Review**: Perencanaan hardware dan software
-3. **Prototype**: Implementasi awal dan pengujian
-4. **Final Demo**: Presentasi dan demonstrasi proyek lengkap
-5. **Documentation**: Laporan teknis dan dokumentasi pengguna
+### Mulai Belajar
 
-## 🔖 Sistem Penilaian
+1. Mulai dari `modul-1/README.md` dan ikuti materi secara berurutan
+2. Setiap modul berisi materi teoritis dan praktikum
+3. Contoh kode tersedia di folder `code/` pada setiap modul
+4. Kerjakan latihan mandiri untuk memperdalam pemahaman
 
-- **Praktikum & Tugas**: 30%
-- **Quiz**: 15%
-- **Ujian Tengah Semester**: 20%
+## 📅 Jadwal Perkuliahan
+
+| Minggu | Modul | Topik |
+|--------|-------|-------|
+| 1 | Modul 1 | Pengenalan dan Persiapan |
+| 2 | Modul 2 | Dasar-Dasar Input/Output |
+| 3 | Modul 3 | Komunikasi dan Tampilan |
+| 4 | Modul 4 | Pemrograman Lanjutan |
+| 5 | Modul 5 | Konektivitas Nirkabel |
+| 6 | Modul 6 | Fitur Lanjutan ESP32-S3 |
+| 7 | Modul 7 | Aplikasi Modern dan Proyek Terintegrasi |
+
+## 📊 Penilaian
+
+- **Tugas Praktikum**: 40%
+- **Kuis Mingguan**: 20%
+- **Proyek Tengah Semester**: 15%
 - **Proyek Akhir**: 25%
-- **Partisipasi Kelas**: 10%
 
-## 📚 Referensi & Sumber Daya
+Detail lengkap mengenai penilaian akan dijelaskan pada pertemuan pertama.
 
-### Buku Teks Utama
-- Kolban, N. (2022). *Kolban's Book on ESP32: Programming with Arduino IDE*. Leanpub.
-- Seneviratne, P. (2022). *ESP32 Internet of Things Projects*. Packt Publishing.
+## 🔗 Sumber Daya Tambahan
 
-### Referensi Online
-- [Dokumentasi Resmi ESP32 S3](https://docs.espressif.com/projects/esp-idf/en/latest/esp32s3/)
-- [Arduino ESP32 Core Documentation](https://docs.espressif.com/projects/arduino-esp32/)
-- [Random Nerd Tutorials - ESP32](https://randomnerdtutorials.com/esp32/)
-- [ESP32 Technical Reference Manual](https://www.espressif.com/sites/default/files/documentation/esp32-s3_technical_reference_manual_en.pdf)
+- [Dokumentasi Resmi ESP32-S3](https://docs.espressif.com/projects/esp-idf/en/latest/esp32s3/index.html)
+- [Arduino ESP32 GitHub Repository](https://github.com/espressif/arduino-esp32)
+- [Espressif Systems Website](https://www.espressif.com/)
+- [Forum Komunitas ESP32](https://esp32.com/)
+- [Arduino Reference](https://www.arduino.cc/reference/en/)
 
-## 👥 Kontribusi
+## 📚 Referensi
 
-Mahasiswa dan pengajar dipersilakan untuk berkontribusi pada pengembangan materi ini melalui:
+Materi dalam perkuliahan ini disusun dengan mengacu pada sumber-sumber berikut:
 
-- Bug reporting: Melaporkan kesalahan atau typo
-- Enhancement: Mengusulkan perbaikan atau tambahan materi
-- Documentation: Membantu memperbaiki atau melengkapi dokumentasi
+1. Espressif Systems. (2023). *ESP32-S3 Technical Reference Manual*. [https://www.espressif.com/sites/default/files/documentation/esp32-s3_technical_reference_manual_en.pdf](https://www.espressif.com/sites/default/files/documentation/esp32-s3_technical_reference_manual_en.pdf)
 
-Untuk berkontribusi, silakan buat **pull request** atau laporkan **issue** di repositori ini.
+2. Espressif Systems. (2023). *ESP32-S3 Datasheet*. [https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf](https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf)
 
-## 📜 Lisensi
+3. Arduino. (2023). *Arduino Reference*. [https://www.arduino.cc/reference/en/](https://www.arduino.cc/reference/en/)
 
-Materi dalam repositori ini dilisensikan di bawah [Lisensi MIT](LICENSE).
+4. Kolban, N. (2022). *Kolban's Book on ESP32*. Leanpub. [https://leanpub.com/kolban-ESP32](https://leanpub.com/kolban-ESP32)
+
+5. Seneviratne, P. (2022). *ESP32 Internet of Things Projects: Leveraging the ESP32 Wi-Fi and Bluetooth Functionality for Building IoT Projects*. Packt Publishing.
+
+6. Hughes, J. M. (2021). *Arduino: A Technical Reference*. O'Reilly Media.
+
+7. Purdum, J. (2020). *Beginning C for Arduino: Learn C Programming for the Arduino*. Apress.
+
+8. Molloy, D. (2022). *Exploring BeagleBone: Tools and Techniques for Building with Embedded Linux*. Wiley. (Referensi untuk konsep embedded systems)
+
+9. Espressif Systems. (2023). *ESP-IDF Programming Guide*. [https://docs.espressif.com/projects/esp-idf/en/latest/](https://docs.espressif.com/projects/esp-idf/en/latest/)
+
+10. MQTT.org. (2023). *MQTT Documentation*. [https://mqtt.org/](https://mqtt.org/) (Referensi untuk komunikasi IoT)
+
+11. Waltenegus, D., & Christian, P. (2021). *Fundamentals of the Internet of Things: What the IoT Is and How It Works*. Artech House.
+
+12. Harvey, D. (2021). *Circuit Design: Fundamentals and Examples*. Newnes.
+
+Materi kuliah ini juga mengacu pada praktik terbaik industri dan komunitas pengembang ESP32 yang terus berkembang hingga tahun 2025.
+
+## 📝 Lisensi
+
+Materi dalam repositori ini dilisensikan di bawah [MIT License](LICENSE).
+
+
+
+## 🤝 Kontribusi
+
+Saran dan kontribusi dari mahasiswa untuk meningkatkan materi perkuliahan sangat dihargai. Silakan buat issue atau pull request jika Anda memiliki saran perbaikan.
+
+Untuk diskusi lebih lanjut dan berbagi pengetahuan, Anda juga dapat bergabung dengan komunitas kami di Telegram: [Koding Indonesia](https://t.me/kodingindonesia)
 
 ---
 
 <div align="center">
-  <p>
-    Dikembangkan dengan 💙 untuk perkuliahan Microcontroller
-    <br>
-    © Departemen Informatika, Universitas Mulawarman, 2025
-  </p>
+  <p>Dibuat dengan ❤️ untuk mahasiswa Teknik</p>
+  <p><strong>Selamat belajar dan bereksperimen dengan ESP32-S3!</strong></p>
 </div>
