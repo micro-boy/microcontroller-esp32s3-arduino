@@ -1,8 +1,7 @@
 # 📘 Modul 1: Pengenalan dan Persiapan ESP32-S3
 
 <div align="center">
-  <img src="https://docs.espressif.com/projects/esp-idf/en/latest/esp32s3/_images/ESP32-S3-DevKitC-1-v1.1-isometric.png" width="400">
-  
+  <img src="https://github.com/user-attachments/assets/9ddf4b0b-0300-4beb-9ba3-29479c1c4e45" width="400">
   <p><em>ESP32-S3 Development Board - Microcontroller Modern dengan Kemampuan AI</em></p>
   
   <p>
