@@ -24,7 +24,7 @@
   - [OLED Display dengan I2C](#oled-display-dengan-i2c)
   - [LCD Display dengan I2C](#lcd-display-dengan-i2c)
   - [Desain Antarmuka Pengguna Sederhana](#desain-antarmuka-pengguna-sederhana)
-- [Praktikum 1: Stasiun Cuaca Mini dengan Display](#-praktikum-1-stasiun-cuaca-mini-dengan-display)
+- [Praktikum 1: Stasiun Cuaca Mini dengan Display](#%EF%B8%8F-praktikum-1-stasiun-cuaca-mini-dengan-display)
 - [Praktikum 2: Sistem Dashboard Multi-Sensor](#-praktikum-2-sistem-dashboard-multi-sensor)
 - [Latihan Mandiri](#-latihan-mandiri)
 - [Sumber Referensi](#-sumber-referensi)
