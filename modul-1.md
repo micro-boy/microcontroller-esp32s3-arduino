@@ -17,7 +17,7 @@
 - [Tujuan Pembelajaran](#-tujuan-pembelajaran)
 - [Pengenalan Microcontroller](#-pengenalan-microcontroller)
 - [Mengenal ESP32-S3](#-mengenal-esp32-s3)
-- [Mempersiapkan Lingkungan Arduino IDE](#EF%B8%8F-mempersiapkan-lingkungan-arduino-ide)
+- [Mempersiapkan Lingkungan Arduino IDE](#%EF%B8%8F-mempersiapkan-lingkungan-arduino-ide)
 - [Program Pertama: Hello World ESP32-S3](#-program-pertama-hello-world-esp32-s3)
 - [Latihan Mandiri](#-latihan-mandiri)
 - [Sumber Referensi](#-sumber-referensi)
