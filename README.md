@@ -162,6 +162,6 @@ Materi dalam repositori ini dilisensikan di bawah [Lisensi MIT](LICENSE).
   <p>
     Dikembangkan dengan 💙 untuk perkuliahan Microcontroller
     <br>
-    © Departemen [Nama Departemen], [Nama Institusi], 2025
+    © Departemen Informatika, Universitas Mulawarman, 2025
   </p>
 </div>
