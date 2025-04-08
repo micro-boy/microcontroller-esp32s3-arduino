@@ -20,13 +20,13 @@
   - [I2C: Komunikasi Multi-Perangkat](#i2c-komunikasi-multi-perangkat)
   - [SPI: Komunikasi Cepat](#spi-komunikasi-cepat)
   - [Pemilihan Protokol yang Tepat](#pemilihan-protokol-yang-tepat)
-- [Menghubungkan Display dan Antarmuka Pengguna](#-menghubungkan-display-dan-antarmuka-pengguna)
+- [Menghubungkan Display dan Antarmuka Pengguna](#%EF%B8%8F-menghubungkan-display-dan-antarmuka-pengguna)
   - [OLED Display dengan I2C](#oled-display-dengan-i2c)
   - [LCD Display dengan I2C](#lcd-display-dengan-i2c)
   - [Desain Antarmuka Pengguna Sederhana](#desain-antarmuka-pengguna-sederhana)
 - [Praktikum 1: Stasiun Cuaca Mini dengan Display](#%EF%B8%8F-praktikum-1-stasiun-cuaca-mini-dengan-display)
 - [Praktikum 2: Sistem Dashboard Multi-Sensor](#-praktikum-2-sistem-dashboard-multi-sensor)
-- [Latihan Mandiri](#-latihan-mandiri)
+- [Latihan Mandiri](#%EF%B8%8F-latihan-mandiri)
 - [Sumber Referensi](#-sumber-referensi)
 
 ---
