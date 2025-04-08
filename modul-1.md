@@ -298,7 +298,7 @@ void loop() {
 Serial Monitor adalah alat yang sangat penting untuk debugging dan komunikasi antara ESP32-S3 dan komputer.
 
 <div align="center">
-  <img src="https://docs.arduino.cc/static/1c9fba0045d928839d18eb0fee6182e9/29114/ide-serial-monitor.png" width="500">
+  <img src="https://github.com/user-attachments/assets/87cb2e3a-e130-4381-911b-f0b2f7c56e36" width="500">
   <p><em>Serial Monitor Arduino IDE</em></p>
 </div>
 
