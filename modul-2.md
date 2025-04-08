@@ -28,7 +28,7 @@
   - [Kalibrasi Sensor](#kalibrasi-sensor)
 - [Praktikum 1: Sistem Kontrol Lampu Interaktif](#-praktikum-1-sistem-kontrol-lampu-interaktif)
 - [Praktikum 2: Monitoring Lingkungan](#-praktikum-2-monitoring-lingkungan)
-- [Latihan Mandiri](#-latihan-mandiri)
+- [Latihan Mandiri](#%EF%B8%8F-latihan-mandiri)
 - [Sumber Referensi](#-sumber-referensi)
 
 ---
