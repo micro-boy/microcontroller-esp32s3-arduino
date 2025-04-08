@@ -35,7 +35,7 @@ Setelah menyelesaikan kuliah ini, Anda akan mampu:
 
 ## 📝 Daftar Modul
 
-Kuliah ini terdiri dari 15 modul terstruktur yang membangun pengetahuan Anda secara progresif:
+Kuliah ini terdiri dari 7 modul terstruktur yang membangun pengetahuan Anda secara progresif:
 
 ### Modul 1: Pengenalan dan Persiapan
 - Pengenalan Microcontroller dan ESP32-S3
