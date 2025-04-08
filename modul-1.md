@@ -684,4 +684,5 @@ void loop() {
 
 ---
 
-**Modul berikutnya**: Dasar-Dasar Input/Output dengan ESP32-S3
+[➡️ Lanjut ke Modul 2: Dasar-Dasar Input/Output dengan ESP32-S3](https://github.com/micro-boy/microcontroller-esp32s3-arduino/blob/main/modul-2.md)
+---
