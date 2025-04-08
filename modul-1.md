@@ -91,7 +91,7 @@ ESP32-S3 merupakan bagian dari keluarga ESP32 yang dikembangkan oleh Espressif S
 ### Arsitektur ESP32-S3
 
 <div align="center">
-  ![image](https://github.com/user-attachments/assets/833e0c24-0969-4076-9ff0-62fbcdc556db)
+   <img src="https://github.com/user-attachments/assets/833e0c24-0969-4076-9ff0-62fbcdc556db" width="600">
   <p><em>Diagram Blok ESP32-S3</em></p>
 </div>
 
