@@ -164,7 +164,7 @@ ESP32-S3 memiliki beberapa keunggulan yang membuatnya menonjol:
 Arduino IDE (Integrated Development Environment) adalah lingkungan pengembangan yang populer untuk microcontroller. Meskipun awalnya dibuat untuk board Arduino, saat ini Arduino IDE mendukung berbagai platform termasuk ESP32-S3.
 
 <div align="center">
-  <img src="https://docs.arduino.cc/static/19eeb10658665a0598eac34bfabb4488/a3803/ide-2-overview.jpg" width="600">
+  <img src="https://github.com/user-attachments/assets/8586ba11-964d-439a-babf-f177ada76df4" width="600">
   <p><em>Tampilan Arduino IDE 2.0</em></p>
 </div>
 
