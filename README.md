@@ -4,7 +4,7 @@
   <img src="https://docs.espressif.com/projects/esp-idf/en/latest/esp32s3/_images/ESP32-S3_DevKitC-1_pinlayout.png" width="600">
   <p><em>ESP32-S3 Development Board</em></p>
   
-  ![GitHub last commit](https://img.shields.io/github/last-commit/yourusername/esp32s3-microcontroller-course)
+  ![GitHub last commit](https://img.shields.io/github/last-commit/micro-boy/microcontroller-esp32s3-arduino)
   ![License](https://img.shields.io/badge/License-MIT-blue.svg)
   ![Arduino IDE](https://img.shields.io/badge/Arduino_IDE-Compatible-brightgreen)
 </div>
