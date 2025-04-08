@@ -181,6 +181,7 @@ Saran dan kontribusi dari mahasiswa untuk meningkatkan materi perkuliahan sangat
 
 Untuk diskusi lebih lanjut dan berbagi pengetahuan, Anda juga dapat bergabung dengan komunitas kami di Telegram: [Koding Indonesia](https://t.me/kodingindonesia)
 
+[➡️ Lanjut ke Modul 1: Pengenalan dan Persiapan ESP32-S3](https://github.com/micro-boy/microcontroller-esp32s3-arduino/edit/main/modul-1.md)
 ---
 
 <div align="center">
