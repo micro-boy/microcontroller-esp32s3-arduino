@@ -374,7 +374,7 @@ Catatan penting tentang pinout:
 Berikut adalah cara merangkai LED eksternal dengan ESP32-S3:
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/03444e29-1788-4f48-9012-16d3c4739cca" width="600">
+  <img src="https://github.com/user-attachments/assets/44a1b1ee-a96a-4c6c-8fee-84776aaede20" width="600">
   <p><em>Rangkaian LED eksternal dengan ESP32-S3</em></p>
 </div>
 
