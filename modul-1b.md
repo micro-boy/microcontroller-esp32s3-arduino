@@ -1,7 +1,7 @@
 # 📘 Modul 1: Pengenalan dan Persiapan ESP32-S3
 
 <div align="center">
-  <img src="https://docs.espressif.com/projects/esp-idf/en/latest/esp32s3/_images/ESP32-S3-DevKitC-1-v1.1-isometric.png" width="400">
+  <img src="https://github.com/user-attachments/assets/9ddf4b0b-0300-4beb-9ba3-29479c1c4e45" width="400">
   
   <p><em>ESP32-S3 Development Board - Microcontroller Modern dengan Kemampuan AI</em></p>
   
@@ -93,7 +93,7 @@ ESP32-S3 merupakan bagian dari keluarga ESP32 yang dikembangkan oleh Espressif S
 ### Arsitektur ESP32-S3
 
 <div align="center">
-  <img src="https://www.espressif.com/sites/default/files/product/ESP32-S3/block-diagram-esp32-s3.jpg" width="600">
+   <img src="https://github.com/user-attachments/assets/833e0c24-0969-4076-9ff0-62fbcdc556db" width="600">
   <p><em>Diagram Blok ESP32-S3</em></p>
 </div>
 
@@ -166,7 +166,7 @@ ESP32-S3 memiliki beberapa keunggulan yang membuatnya menonjol:
 Arduino IDE (Integrated Development Environment) adalah lingkungan pengembangan yang populer untuk microcontroller. Meskipun awalnya dibuat untuk board Arduino, saat ini Arduino IDE mendukung berbagai platform termasuk ESP32-S3.
 
 <div align="center">
-  <img src="https://docs.arduino.cc/static/19eeb10658665a0598eac34bfabb4488/a3803/ide-2-overview.jpg" width="600">
+  <img src="https://github.com/user-attachments/assets/8586ba11-964d-439a-babf-f177ada76df4" width="600">
   <p><em>Tampilan Arduino IDE 2.0</em></p>
 </div>
 
@@ -226,7 +226,7 @@ Secara default, Arduino IDE tidak langsung mendukung ESP32-S3. Anda perlu menamb
 4. **Konfigurasi Pengaturan Board Spesifik**:
 
 <div align="center">
-  <img src="https://i.imgur.com/vQYkFSl.png" width="600">
+  <img src="https://github.com/user-attachments/assets/8389998c-335a-4b61-9e19-767cbaed0e16" width="600">
   <p><em>Konfigurasi Spesifik ESP32-S3 di Arduino IDE</em></p>
 </div>
 
@@ -312,7 +312,7 @@ void loop() {
 Serial Monitor adalah alat yang sangat penting untuk debugging dan komunikasi antara ESP32-S3 dan komputer.
 
 <div align="center">
-  <img src="https://docs.arduino.cc/static/1c9fba0045d928839d18eb0fee6182e9/29114/ide-serial-monitor.png" width="500">
+  <img src="https://github.com/user-attachments/assets/87cb2e3a-e130-4381-911b-f0b2f7c56e36" width="500">
   <p><em>Serial Monitor Arduino IDE</em></p>
 </div>
 
@@ -359,7 +359,7 @@ Untuk rangkaian dasar ESP32-S3 dengan LED eksternal, Anda memerlukan:
 Sebelum merangkai, penting untuk memahami pinout ESP32-S3:
 
 <div align="center">
-  <img src="https://docs.espressif.com/projects/esp-idf/en/latest/esp32s3/_images/ESP32-S3_DevKitC-1_pinlayout.png" width="700">
+  <img src="https://github.com/user-attachments/assets/666ad3c5-c36d-4dcc-abf3-a278675a21b7" width="700">
   <p><em>Pinout Diagram ESP32-S3-DevKitC-1</em></p>
 </div>
 
@@ -374,7 +374,7 @@ Catatan penting tentang pinout:
 Berikut adalah cara merangkai LED eksternal dengan ESP32-S3:
 
 <div align="center">
-  <img src="https://i.imgur.com/szgAFoM.png" width="600">
+  <img src="https://github.com/user-attachments/assets/03444e29-1788-4f48-9012-16d3c4739cca" width="600">
   <p><em>Rangkaian LED eksternal dengan ESP32-S3</em></p>
 </div>
 
