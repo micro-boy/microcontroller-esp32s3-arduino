@@ -134,7 +134,7 @@ Mari kita buat rangkaian sederhana yang menghubungkan tombol (push button) dan L
 **Rangkaian:**
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/2f847fcc-1adc-45a0-8a25-3eff0a61654b" width="600">
+  <img src="https://i.imgur.com/vdtsMlb.png" width="600">
   <p><em>Rangkaian Tombol dan LED dengan ESP32-S3</em></p>
 </div>
 
@@ -146,6 +146,12 @@ Mari kita buat rangkaian sederhana yang menghubungkan tombol (push button) dan L
 2. Hubungkan tombol:
    - Satu kaki tombol ke pin GPIO4 ESP32-S3
    - Kaki lainnya ke GND
+
+**Simulasi Online:**
+
+📱 **Simulasi Online**: [Coba rangkaian ini di Wokwi](https://wokwi.com/projects/371558065275142145)
+
+⚠️ **Catatan**: Simulasi online memberikan gambaran dasar tentang cara kerja rangkaian, tetapi pengalaman dengan hardware asli mungkin sedikit berbeda. Jika tidak dapat mengakses simulasi, praktikum ini dapat dilakukan langsung dengan hardware di laboratorium.
 
 **Kode Program:**
 
@@ -211,7 +217,7 @@ void loop() {
 Saat bekerja dengan input digital, pemahaman tentang resistor pull-up dan pull-down sangat penting.
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/a22fa900-41d0-4346-ae3f-7a4df2c10db7" width="600">
+  <img src="https://i.imgur.com/XzEzWxM.png" width="650">
   <p><em>Konfigurasi Rangkaian Pull-up dan Pull-down</em></p>
 </div>
 
@@ -249,7 +255,7 @@ pinMode(4, INPUT);
 Ketika bekerja dengan tombol/switch mekanis, Anda akan menghadapi fenomena yang disebut "bouncing" - fenomena di mana kontak mekanis menghasilkan beberapa pulsa pada saat transisi, alih-alih satu pulsa bersih.
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/0d9715cf-a877-41bc-af60-0e2d0d94651a" width="500">
+  <img src="https://i.imgur.com/Tv9ZTCg.png" width="500">
   <p><em>Fenomena Bouncing pada Tombol Mekanis</em></p>
 </div>
 
@@ -352,6 +358,10 @@ void loop() {
 }
 ```
 
+**Simulasi Online:**
+
+📱 **Simulasi Online**: [Coba contoh debouncing di Wokwi](https://wokwi.com/projects/371561222673675265)
+
 > 💡 **Tip**: Pilih metode debouncing sesuai dengan kebutuhan aplikasi Anda. Metode delay sederhana umumnya cukup untuk aplikasi sederhana, tetapi metode dengan timestamp atau library lebih baik untuk aplikasi yang memerlukan responsivitas tinggi.
 
 ### Praktikum 2: Lampu Lalu Lintas Sederhana
@@ -381,6 +391,12 @@ Mari kita buat sistem lampu lalu lintas sederhana dengan tiga LED (merah, kuning
 2. Hubungkan tombol:
    - Satu kaki tombol ke GPIO4
    - Kaki lainnya ke GND
+
+**Simulasi Online:**
+
+📱 **Simulasi Online**: [Coba rangkaian lampu lalu lintas di Wokwi](https://wokwi.com/projects/371562695597361153)
+
+⚠️ **Catatan**: Simulasi online sangat membantu untuk memahami logika program, namun pengalaman dengan hardware asli memberikan pemahaman yang lebih baik tentang komponen elektronik dan koneksi fisik.
 
 **Kode Program:**
 
@@ -699,6 +715,10 @@ void loop() {
 }
 ```
 
+**Simulasi Online PWM:**
+
+📱 **Simulasi Online**: [Coba PWM dasar di Wokwi](https://wokwi.com/projects/371564018721381377)
+
 **Kasus Penggunaan Umum PWM:**
 1. Mengontrol kecerahan LED
 2. Menghasilkan sinyal audio
@@ -735,6 +755,12 @@ Sekarang mari kita buat rangkaian untuk mengukur tingkat cahaya menggunakan LDR 
    - Kaki anoda (panjang) ke resistor 220Ω
    - Resistor ke pin GPIO13
    - Kaki katoda (pendek) ke GND
+
+**Simulasi Online:**
+
+📱 **Simulasi Online**: [Coba rangkaian pengukur cahaya di Wokwi](https://wokwi.com/projects/371565220184115201)
+
+⚠️ **Catatan**: Dalam simulasi online, LDR bisa dikendalikan dengan mengklik pada komponennya untuk mensimulasikan perubahan cahaya. Pada hardware asli, Anda akan melihat respons nyata terhadap cahaya di lingkungan.
 
 **Kode Program:**
 
@@ -883,6 +909,12 @@ Mari kita buat rangkaian untuk mengontrol kecerahan LED menggunakan potentiomete
    - Resistor ke pin GPIO13
    - Kaki katoda (pendek) ke GND
 
+**Simulasi Online:**
+
+📱 **Simulasi Online**: [Coba kontrol kecerahan LED di Wokwi](https://wokwi.com/projects/371566427258081281)
+
+⚠️ **Catatan**: Dalam simulasi, putar potentiometer dengan mengklik dan menariknya untuk mengubah kecerahan LED.
+
 **Kode Program:**
 
 ```cpp
@@ -1021,6 +1053,12 @@ Mari kita gabungkan pengetahuan yang telah dipelajari dengan membuat sebuah proy
   <img src="https://i.imgur.com/V4jD9o9.png" width="650">
   <p><em>Rangkaian Lampu Otomatis dengan ESP32-S3</em></p>
 </div>
+
+**Simulasi Online:**
+
+📱 **Simulasi Online**: [Coba proyek lampu otomatis di Wokwi](https://wokwi.com/projects/371567768009932801)
+
+⚠️ **Catatan**: Proyek ini menggabungkan semua konsep yang telah dipelajari. Pengujian dengan hardware asli memberikan pengalaman yang lebih komprehensif dalam membangun sistem otomatis.
 
 **Kode Program:**
 
@@ -1278,6 +1316,8 @@ Uji pemahaman Anda dengan mencoba latihan-latihan berikut:
 
 Buat sistem yang mendeteksi ketika listrik padam (simulasikan dengan tombol) dan mengendalikan LED yang berkedip dengan pola SOS (••• ▬▬▬ •••).
 
+📱 **Simulasi Online**: [Coba latihan SOS di Wokwi](https://wokwi.com/projects/371568846765051905)
+
 <details>
 <summary>Petunjuk</summary>
 
@@ -1322,6 +1362,8 @@ void blinkSOS() {
 
 Buat simulasi sistem yang mendeteksi level cairan dalam tangki menggunakan potentiometer sebagai sensor level. Tampilkan status tangki (kosong, rendah, sedang, tinggi, penuh) di Serial Monitor dan dengan LED berbeda.
 
+⚠️ **Catatan**: Praktikum ini memerlukan pengujian dengan hardware fisik di laboratorium.
+
 <details>
 <summary>Petunjuk</summary>
 
@@ -1353,6 +1395,8 @@ if (tankLevel < 10) {
 ### Latihan 3: Kontrol Motor DC dengan PWM
 
 Simulasikan kontrol motor DC dengan LED. Gunakan dua tombol untuk meningkatkan dan menurunkan kecepatan, dan potentiometer untuk membatasi kecepatan maksimum. Tampilkan "RPM" simulasi di Serial Monitor.
+
+📱 **Simulasi Online**: [Coba simulator motor DC di Wokwi](https://wokwi.com/projects/371569777483578369)
 
 <details>
 <summary>Petunjuk</summary>
@@ -1394,6 +1438,8 @@ int simulatedRPM = map(currentSpeed, 0, 255, 0, 1000);
 ### Latihan 4: LED RGB dengan Perubahan Gradual
 
 Kendalikan LED RGB untuk berubah warna secara gradual melalui spektrum warna. Gunakan ADC untuk menyesuaikan kecepatan transisi.
+
+📱 **Simulasi Online**: [Coba pengendali LED RGB di Wokwi](https://wokwi.com/projects/371570661908520961)
 
 <details>
 <summary>Petunjuk</summary>
