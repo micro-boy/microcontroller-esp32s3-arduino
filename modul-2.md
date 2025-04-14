@@ -249,7 +249,7 @@ pinMode(4, INPUT);
 Ketika bekerja dengan tombol/switch mekanis, Anda akan menghadapi fenomena yang disebut "bouncing" - fenomena di mana kontak mekanis menghasilkan beberapa pulsa pada saat transisi, alih-alih satu pulsa bersih.
 
 <div align="center">
-  <img src="https://i.imgur.com/Tv9ZTCg.png" width="600">
+  <img src="https://github.com/user-attachments/assets/0d9715cf-a877-41bc-af60-0e2d0d94651a" width="500">
   <p><em>Fenomena Bouncing pada Tombol Mekanis</em></p>
 </div>
 
