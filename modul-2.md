@@ -281,6 +281,13 @@ unsigned long lastDebounceTime = 0;  // Waktu terakhir pin berubah
 unsigned long debounceDelay = 50;    // Waktu debounce dalam ms
 int lastButtonState = HIGH;          // Status tombol sebelumnya
 int buttonState = HIGH;              // Status tombol saat ini
+int LED_PIN = 17;
+int BUTTON_PIN = 1;
+
+void setup(){
+  pinMode(LED_PIN, OUTPUT);
+  pinMode(BUTTON_PIN, INPUT_PULLUP);
+}
 
 void loop() {
   // Baca status tombol saat ini
