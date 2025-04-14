@@ -328,6 +328,9 @@ void loop() {
 // Inisialisasi objek Bounce untuk tombol
 Bounce debouncer = Bounce();
 
+int LED_PIN = 17;
+int BUTTON_PIN = 1;
+
 void setup() {
   pinMode(BUTTON_PIN, INPUT_PULLUP);
   pinMode(LED_PIN, OUTPUT);
