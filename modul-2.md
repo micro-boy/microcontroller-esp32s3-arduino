@@ -134,7 +134,7 @@ Mari kita buat rangkaian sederhana yang menghubungkan tombol (push button) dan L
 **Rangkaian:**
 
 <div align="center">
-  <img src="https://i.imgur.com/vdtsMlb.png" width="600">
+  <img src="https://github.com/user-attachments/assets/2f847fcc-1adc-45a0-8a25-3eff0a61654b" width="600">
   <p><em>Rangkaian Tombol dan LED dengan ESP32-S3</em></p>
 </div>
 
