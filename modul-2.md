@@ -211,7 +211,7 @@ void loop() {
 Saat bekerja dengan input digital, pemahaman tentang resistor pull-up dan pull-down sangat penting.
 
 <div align="center">
-  <img src="https://i.imgur.com/XzEzWxM.png" width="650">
+  <img src="https://github.com/user-attachments/assets/a22fa900-41d0-4346-ae3f-7a4df2c10db7" width="600">
   <p><em>Konfigurasi Rangkaian Pull-up dan Pull-down</em></p>
 </div>
 
