@@ -217,7 +217,7 @@ void loop() {
 Saat bekerja dengan input digital, pemahaman tentang resistor pull-up dan pull-down sangat penting.
 
 <div align="center">
-  <img src="https://i.imgur.com/XzEzWxM.png" width="650">
+  <img src="https://github.com/user-attachments/assets/2f130dbf-b4e0-4800-97a3-3d221236e966" width="650">
   <p><em>Konfigurasi Rangkaian Pull-up dan Pull-down</em></p>
 </div>
 
@@ -255,7 +255,7 @@ pinMode(4, INPUT);
 Ketika bekerja dengan tombol/switch mekanis, Anda akan menghadapi fenomena yang disebut "bouncing" - fenomena di mana kontak mekanis menghasilkan beberapa pulsa pada saat transisi, alih-alih satu pulsa bersih.
 
 <div align="center">
-  <img src="https://i.imgur.com/Tv9ZTCg.png" width="500">
+  <img src="https://github.com/user-attachments/assets/cf3718b4-1606-4c22-8d5c-0c9469062bed" width="500">
   <p><em>Fenomena Bouncing pada Tombol Mekanis</em></p>
 </div>
 
