@@ -57,7 +57,7 @@ Setelah mempelajari modul ini, Anda diharapkan dapat:
 GPIO (General Purpose Input/Output) adalah pin serbaguna pada microcontroller yang dapat dikonfigurasi sebagai input atau output digital. GPIO adalah antarmuka dasar yang memungkinkan microcontroller berinteraksi dengan dunia luar.
 
 <div align="center">
-  <img src="https://i.imgur.com/KYEkytx.png" width="600">
+  <img src="https://github.com/user-attachments/assets/55ff7c62-fd76-4be3-842a-e0c6976584ca" width="500">
   <p><em>Konsep GPIO sebagai Jembatan antara Microcontroller dan Dunia Luar</em></p>
 </div>
 
@@ -134,7 +134,7 @@ Mari kita buat rangkaian sederhana yang menghubungkan tombol (push button) dan L
 **Rangkaian:**
 
 <div align="center">
-  <img src="https://i.imgur.com/vdtsMlb.png" width="600">
+  <img src="https://github.com/user-attachments/assets/3096e922-2d65-4fcb-b5c2-c80bb57e1b9d" width="500">
   <p><em>Rangkaian Tombol dan LED dengan ESP32-S3</em></p>
 </div>
 
@@ -149,7 +149,7 @@ Mari kita buat rangkaian sederhana yang menghubungkan tombol (push button) dan L
 
 **Simulasi Online:**
 
-📱 **Simulasi Online**: [Coba rangkaian ini di Wokwi](https://wokwi.com/projects/371558065275142145)
+📱 **Simulasi Online**: [Coba rangkaian ini di Wokwi](https://wokwi.com/projects/428248754333770753)
 
 ⚠️ **Catatan**: Simulasi online memberikan gambaran dasar tentang cara kerja rangkaian, tetapi pengalaman dengan hardware asli mungkin sedikit berbeda. Jika tidak dapat mengakses simulasi, praktikum ini dapat dilakukan langsung dengan hardware di laboratorium.
 
