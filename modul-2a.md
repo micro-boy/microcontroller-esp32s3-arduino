@@ -389,17 +389,17 @@ Mari kita buat sistem lampu lalu lintas sederhana dengan tiga LED (merah, kuning
 </div>
 
 1. Hubungkan LED:
-   - LED merah: kaki anoda → resistor → GPIO14, kaki katoda → GND
-   - LED kuning: kaki anoda → resistor → GPIO13, kaki katoda → GND
-   - LED hijau: kaki anoda → resistor → GPIO12, kaki katoda → GND
+   - LED merah: kaki anoda → resistor → GPIO8, kaki katoda → GND
+   - LED kuning: kaki anoda → resistor → GPIO18, kaki katoda → GND
+   - LED hijau: kaki anoda → resistor → GPIO17, kaki katoda → GND
 
 2. Hubungkan tombol:
-   - Satu kaki tombol ke GPIO4
+   - Satu kaki tombol ke GPIO1
    - Kaki lainnya ke GND
 
 **Simulasi Online:**
 
-📱 **Simulasi Online**: [Coba rangkaian lampu lalu lintas di Wokwi](https://wokwi.com/projects/371562695597361153)
+📱 **Simulasi Online**: [Coba rangkaian lampu lalu lintas di Wokwi](https://wokwi.com/projects/428338952566609921)
 
 ⚠️ **Catatan**: Simulasi online sangat membantu untuk memahami logika program, namun pengalaman dengan hardware asli memberikan pemahaman yang lebih baik tentang komponen elektronik dan koneksi fisik.
 
@@ -414,10 +414,10 @@ Mari kita buat sistem lampu lalu lintas sederhana dengan tiga LED (merah, kuning
  */
 
 // Definisi pin untuk LED
-const int RED_PIN = 14;
-const int YELLOW_PIN = 13;
-const int GREEN_PIN = 12;
-const int BUTTON_PIN = 4;
+const int RED_PIN = 8;
+const int YELLOW_PIN = 18;
+const int GREEN_PIN = 17;
+const int BUTTON_PIN = 1;
 
 // Definisi mode lampu lalu lintas
 const int MODE_AUTO = 0;  // Mode otomatis (siklus normal)
