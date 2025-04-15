@@ -326,6 +326,10 @@ void loop() {
 }
 ```
 
+📱 **Simulasi Online**: [Coba rangkaian ini di Wokwi](https://wokwi.com/projects/428249660805757953)
+
+> 💡 **Tip**: Pilih metode debouncing sesuai dengan kebutuhan aplikasi Anda. Metode delay sederhana umumnya cukup untuk aplikasi sederhana, tetapi metode dengan timestamp atau library lebih baik untuk aplikasi yang memerlukan responsivitas tinggi.
+
 3. **Debouncing dengan Library:**
    Untuk pendekatan yang lebih robust, Anda bisa menggunakan library seperti Bounce2.
 
@@ -361,7 +365,7 @@ void loop() {
 
 **Simulasi Online:**
 
-📱 **Simulasi Online**: [Coba contoh debouncing di Wokwi](https://wokwi.com/projects/371561222673675265)
+📱 **Simulasi Online**: [Coba contoh debouncing di Wokwi](https://wokwi.com/projects/428250143524059137)
 
 > 💡 **Tip**: Pilih metode debouncing sesuai dengan kebutuhan aplikasi Anda. Metode delay sederhana umumnya cukup untuk aplikasi sederhana, tetapi metode dengan timestamp atau library lebih baik untuk aplikasi yang memerlukan responsivitas tinggi.
 
