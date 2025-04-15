@@ -1,7 +1,8 @@
 # 📘 Modul 2: Dasar-Dasar Input/Output dengan ESP32-S3
 
 <div align="center">
-  <img src="https://docs.espressif.com/projects/esp-idf/en/latest/esp32s3/_images/esp32-s3_devkitc_c_v1.1_top_leds.png" width="400">
+
+  <img src="https://github.com/user-attachments/assets/fa8faa43-a763-4df4-8d60-5a4fa869de7d" width="400">
   
   <p><em>ESP32-S3 Development Board - Kendalikan Dunia Digital dan Analog</em></p>
   
