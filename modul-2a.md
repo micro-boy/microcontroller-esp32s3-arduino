@@ -678,7 +678,7 @@ dacWrite(18, 255);  // Menetapkan output ke ~3.3V (maksimum)
 PWM adalah teknik untuk membuat sinyal "pseudo-analog" dengan mengubah duty cycle dari sinyal digital. ESP32-S3 memiliki dukungan PWM yang sangat fleksibel.
 
 <div align="center">
-  <img src="https://i.imgur.com/2xm4D7w.png" width="600">
+  <img src="https://github.com/user-attachments/assets/f50b9779-50fb-465a-8d2e-2bd5c993fa54" width="500">
   <p><em>Variasi Duty Cycle PWM dan Efeknya pada Nilai Rata-rata</em></p>
 </div>
 
