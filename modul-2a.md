@@ -605,7 +605,7 @@ void handleBlinkMode() {
 Selain sinyal digital (HIGH/LOW), ESP32-S3 juga dapat bekerja dengan sinyal analog yang memiliki berbagai level tegangan. Kemampuan ini memungkinkan interaksi dengan sensor dan aktuator analog.
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/0e63c9a3-fb98-4f07-8759-973e6c86b1fa" width="400">
+  <img src="https://github.com/user-attachments/assets/f269c208-c105-449d-991c-32261b22a477" width="400">
   <p><em>Perbandingan Sinyal Digital dan Analog</em></p>
 </div>
 
