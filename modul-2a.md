@@ -384,7 +384,7 @@ Mari kita buat sistem lampu lalu lintas sederhana dengan tiga LED (merah, kuning
 **Rangkaian:**
 
 <div align="center">
-  <img src="https://i.imgur.com/TQUS0b8.png" width="600">
+  <img src="https://github.com/user-attachments/assets/3711e8ed-77c3-43ec-bc9e-875b0f71db1e" width="500">
   <p><em>Rangkaian Lampu Lalu Lintas dengan ESP32-S3</em></p>
 </div>
 
