@@ -732,157 +732,123 @@ void loop(){
 4. Servo kontrol
 5. Dimming lampu
 
-### Praktikum 3: Pengukur Cahaya dengan LDR
+### Praktikum 3: Pengukur Cahaya dengan Modul LDR
 
-Sekarang mari kita buat rangkaian untuk mengukur tingkat cahaya menggunakan LDR (Light Dependent Resistor) dan ESP32-S3.
+Sekarang mari kita buat rangkaian untuk mengukur tingkat cahaya menggunakan **modul LDR** dan ESP32-S3.
 
 **Komponen yang Dibutuhkan:**
-1. ESP32-S3 DevKit
-2. LDR (Light Dependent Resistor)
-3. Resistor 10kΩ (untuk pembagi tegangan)
-4. LED
-5. Resistor 220Ω (untuk LED)
-6. Breadboard
-7. Kabel jumper
+1. ESP32-S3 DevKit  
+2. Modul LDR (dengan pin VCC, GND, AO, DO)  
+3. LED  
+4. Resistor 220 Ω (untuk LED)  
+5. Breadboard  
+6. Kabel jumper  
 
 **Rangkaian:**
 
 <div align="center">
-  <img src="https://i.imgur.com/Jw9rkBv.png" width="600">
-  <p><em>Rangkaian Pengukur Cahaya dengan LDR dan ESP32-S3</em></p>
+  <img src="/mnt/data/3027cfa6-8be4-4b8d-9fe0-14e72eee5976.png" width="600">
+  <p><em>Modul LDR dengan pin: VCC, GND, DO (digital), AO (analog)</em></p>
 </div>
 
-1. Hubungkan LDR dalam konfigurasi pembagi tegangan:
-   - Satu ujung LDR ke 3.3V
-   - Ujung lain LDR ke pin GPIO1 (ADC1_CH0) dan juga ke resistor 10kΩ
-   - Ujung lain resistor 10kΩ ke GND
+1. **Modul LDR → ESP32-S3**  
+   - **VCC** → 3.3 V  
+   - **GND** → GND  
+   - **AO**  → GPIO1 (ADC1_CH0)  
+   - **(Opsional) DO** → GPIO2 (jika mau membaca ambang digital bawaan modul)  
 
-2. Hubungkan LED:
-   - Kaki anoda (panjang) ke resistor 220Ω
-   - Resistor ke pin GPIO13
-   - Kaki katoda (pendek) ke GND
+2. **LED**  
+   - Anoda (kaki panjang) → Resistor 220 Ω → GPIO13  
+   - Katoda (kaki pendek) → GND  
 
-**Simulasi Online:**
+> **Catatan:** Kita hanya akan membaca nilai analog dari **AO**. Pin **DO** pada modul bisa digunakan jika ingin LED menyala/mati otomatis dari ambang batas hardware, tapi di sini kita pakai threshold di kode.
 
-📱 **Simulasi Online**: [Coba rangkaian pengukur cahaya di Wokwi](https://wokwi.com/projects/371565220184115201)
+---
 
-⚠️ **Catatan**: Dalam simulasi online, LDR bisa dikendalikan dengan mengklik pada komponennya untuk mensimulasikan perubahan cahaya. Pada hardware asli, Anda akan melihat respons nyata terhadap cahaya di lingkungan.
-
-**Kode Program:**
+#### Kode Program (menggunakan AO saja)
 
 ```cpp
 /*
- * Praktikum 3: Pengukur Cahaya dengan LDR
- * Fungsi: Membaca nilai LDR dan menampilkan level cahaya di Serial Monitor
- *         serta mengontrol LED berdasarkan level cahaya
+ * Praktikum 3: Pengukur Cahaya dengan Modul LDR
+ * Fungsi: Membaca nilai AO dari modul LDR dan mengontrol LED
  * Platform: ESP32-S3
  */
 
 // Definisi pin
-const int LDR_PIN = 1;    // GPIO1, ADC1_CH0 untuk LDR
-const int LED_PIN = 13;   // GPIO13 untuk LED
+const int LDR_AO_PIN    = 1;   // GPIO1, ADC1_CH0
+const int LED_PIN       = 13;  // GPIO13
 
-// Parameter untuk pemetaan nilai
-const int ANALOG_RESOLUTION = 4095;  // 12-bit ADC
-const int SAMPLES = 10;             // Jumlah sampel untuk rata-rata
-const int THRESHOLD = 2000;         // Ambang batas gelap/terang (sesuaikan sesuai kondisi)
+// Parameter ADC & sampling
+const int ADC_RES       = 4095; // 12-bit ADC (0–4095)
+const int SAMPLES       = 10;   // rata-rata 10 sampel
+const int THRESHOLD     = 2000; // ambang (sesuaikan)
 
-// Variabel global
-int lightLevel = 0;          // Nilai level cahaya
-bool isLightOn = false;      // Status LED
-unsigned long lastPrintTime = 0;  // Waktu terakhir cetak ke Serial
+// Variabel
+int lightLevel = 0;
+bool ledState  = false;
+unsigned long lastPrint = 0;
 
 void setup() {
-  // Inisialisasi komunikasi serial
   Serial.begin(115200);
-  delay(1000);
-  
-  // Konfigurasi pin
+  delay(500);
   pinMode(LED_PIN, OUTPUT);
-  
-  // Konfigurasi ADC
-  analogReadResolution(12);  // Set resolusi ADC ke 12-bit (0-4095)
-  analogSetAttenuation(ADC_11db);  // Set atenuasi untuk range penuh 0-3.3V
-  
-  Serial.println("Pengukur Cahaya dengan LDR Dimulai");
-  Serial.println("=====================================");
-  Serial.println("Nilai LDR akan terbaca pada skala 0-4095");
-  Serial.println("Nilai rendah = cahaya terang");
-  Serial.println("Nilai tinggi = cahaya redup/gelap");
-  Serial.println("LED akan menyala otomatis saat gelap");
+
+  analogReadResolution(12);        // ADC 12 bit
+  analogSetAttenuation(ADC_11db);  // full range 0–3.3 V
+
+  Serial.println("=== Pengukur Cahaya (Modul LDR) ===");
+  Serial.println("Nilai 0 = terang, nilai 4095 = gelap");
 }
 
 void loop() {
-  // Baca nilai LDR (rata-rata dari beberapa sampel)
-  lightLevel = readLightLevel();
-  
-  // Kelola LED berdasarkan level cahaya
-  if (lightLevel > THRESHOLD && !isLightOn) {
-    // Gelap, nyalakan LED
-    digitalWrite(LED_PIN, HIGH);
-    isLightOn = true;
-    Serial.println("Cahaya redup terdeteksi - LED dinyalakan");
-  } 
-  else if (lightLevel <= THRESHOLD && isLightOn) {
-    // Terang, matikan LED
-    digitalWrite(LED_PIN, LOW);
-    isLightOn = false;
-    Serial.println("Cahaya terang terdeteksi - LED dimatikan");
+  // Baca rata-rata beberapa sampel
+  long sum = 0;
+  for (int i = 0; i < SAMPLES; i++) {
+    sum += analogRead(LDR_AO_PIN);
+    delay(2);
   }
-  
-  // Cetak nilai ke Serial Monitor setiap 2 detik
-  if (millis() - lastPrintTime > 2000) {
-    Serial.print("Level Cahaya: ");
-    Serial.print(lightLevel);
-    
-    // Konversi ke persentase (terbalik, karena nilai LDR tinggi = rendah cahaya)
-    int lightPercent = map(lightLevel, 0, ANALOG_RESOLUTION, 100, 0);
-    Serial.print(" (");
-    Serial.print(lightPercent);
-    Serial.print("%)");
-    
-    // Tampilkan status LED
-    Serial.print(" - LED: ");
-    Serial.println(isLightOn ? "ON" : "OFF");
-    
-    // Visualisasi berbasis teks
+  lightLevel = sum / SAMPLES;
+
+  // Kontrol LED berdasarkan ambang
+  if (lightLevel > THRESHOLD && !ledState) {
+    digitalWrite(LED_PIN, HIGH);
+    ledState = true;
+    Serial.println(">> Gelap terdeteksi: LED ON");
+  }
+  else if (lightLevel <= THRESHOLD && ledState) {
+    digitalWrite(LED_PIN, LOW);
+    ledState = false;
+    Serial.println(">> Terang terdeteksi: LED OFF");
+  }
+
+  // Tampilkan status tiap 2 detik
+  if (millis() - lastPrint >= 2000) {
+    // Persentase cahaya (terbalik): 100% = terang
+    int pct = map(lightLevel, 0, ADC_RES, 100, 0);
+    Serial.printf("Level: %4d (%3d%%) — LED: %s\n",
+                  lightLevel, pct, ledState ? "ON" : "OFF");
+
+    // Bar visual sederhana
     Serial.print("[");
+    int bars = pct / 5;
     for (int i = 0; i < 20; i++) {
-      if (i < lightPercent / 5) {
-        Serial.print("*");
-      } else {
-        Serial.print(" ");
-      }
+      Serial.print(i < bars ? "*" : " ");
     }
     Serial.println("]");
-    
-    lastPrintTime = millis();
-  }
-  
-  delay(100);  // Jeda untuk stabilitas pembacaan
-}
 
-// Fungsi untuk membaca level cahaya dengan rata-rata beberapa sampel
-int readLightLevel() {
-  long sum = 0;
-  
-  // Ambil beberapa sampel dan hitung rata-rata
-  for (int i = 0; i < SAMPLES; i++) {
-    sum += analogRead(LDR_PIN);
-    delay(2);  // Jeda kecil antara pembacaan
+    lastPrint = millis();
   }
-  
-  return sum / SAMPLES;
+
+  delay(100);
 }
 ```
 
-**Penjelasan Kode:**
-1. Kita menggunakan ADC untuk membaca nilai dari LDR yang dirangkai dalam konfigurasi pembagi tegangan
-2. Ketika cahaya terang, resistansi LDR rendah, sehingga nilai ADC juga rendah
-3. Ketika cahaya redup/gelap, resistansi LDR tinggi, sehingga nilai ADC juga tinggi
-4. Kita mengambil rata-rata dari beberapa sampel untuk mengurangi noise
-5. LED dikendalikan berdasarkan ambang batas (threshold) nilai cahaya
-6. Kita juga membuat visualisasi sederhana berbasis teks di Serial Monitor
+**Penjelasan singkat:**
+1. **AO** pada modul LDR disambung ke ADC pin ESP32 (GPIO1), sehingga kita tidak perlu menambahkan resistor pembagi tegangan manual.  
+2. Nilai ADC 0…4095 menurun saat cahaya makin terang, dan meningkat saat makin gelap.  
+3. Rata-rata beberapa sampel untuk mengurangi noise.  
+4. LED dikendalikan dengan ambang batas `THRESHOLD` yang bisa Anda sesuaikan.  
+5. Hasil pembacaan dan status LED dicetak di Serial Monitor setiap 2 detik, lengkap dengan bar visual.  
 
 > 💡 **Catatan**: Nilai ambang batas (THRESHOLD) mungkin perlu disesuaikan berdasarkan kondisi pencahayaan lingkungan dan karakteristik LDR yang digunakan.
 
