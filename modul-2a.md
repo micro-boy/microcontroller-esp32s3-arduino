@@ -691,38 +691,39 @@ PWM adalah teknik untuk membuat sinyal "pseudo-analog" dengan mengubah duty cycl
 **Penggunaan LEDC PWM:**
 
 ```cpp
-// Parameter LEDC
-const int freq = 5000;        // Frekuensi PWM (Hz)
-const int ledChannel = 0;     // Channel LEDC (0-15)
-const int resolution = 8;     // Resolusi (bit), 8-bit memberikan nilai 0-255
-const int ledPin = 13;        // Pin untuk output PWM
+// the number of the LED pin
+const int ledPin = 2;  // 16 corresponds to GPIO16
 
-void setup() {
-  // Konfigurasi LEDC
-  ledcSetup(ledChannel, freq, resolution);
+// setting PWM properties
+const int freq = 5000;
+const int resolution = 8;
+ 
+void setup(){
+  // configure LED PWM
+  ledcAttach(ledPin, freq, resolution);
   
-  // Hubungkan channel ke pin GPIO
-  ledcAttachPin(ledPin, ledChannel);
+  // if you want to attach a specific channel, use the following instead
+  //ledcAttachChannel(ledPin, freq, resolution, 0);
 }
-
-void loop() {
+ 
+void loop(){
   // Atur duty cycle ke 50% (127 dari 255 untuk resolusi 8-bit)
-  ledcWrite(ledChannel, 127);
+  ledcWrite(ledPin, 0);
   delay(1000);
   
   // Atur duty cycle ke 25% (64 dari 255)
-  ledcWrite(ledChannel, 64);
+  ledcWrite(ledPin, 125);
   delay(1000);
   
   // Atur duty cycle ke 75% (191 dari 255)
-  ledcWrite(ledChannel, 191);
+  ledcWrite(ledPin, 255);
   delay(1000);
 }
 ```
 
 **Simulasi Online PWM:**
 
-📱 **Simulasi Online**: [Coba PWM dasar di Wokwi](https://wokwi.com/projects/371564018721381377)
+📱 **Simulasi Online**: [Coba PWM dasar di Wokwi](https://wokwi.com/projects/429547333453006849)
 
 **Kasus Penggunaan Umum PWM:**
 1. Mengontrol kecerahan LED
