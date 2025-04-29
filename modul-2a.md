@@ -691,31 +691,31 @@ PWM adalah teknik untuk membuat sinyal "pseudo-analog" dengan mengubah duty cycl
 **Penggunaan LEDC PWM:**
 
 ```cpp
-// the number of the LED pin
-const int ledPin = 2;  // 16 corresponds to GPIO16
+// nomor pin LED
+const int ledPin = 2;  // 16 mengacu pada GPIO16
 
-// setting PWM properties
-const int freq = 5000;
-const int resolution = 8;
+// pengaturan properti PWM
+const int freq = 5000;       // frekuensi PWM dalam Hertz
+const int resolution = 8;    // resolusi PWM dalam bit
  
 void setup(){
-  // configure LED PWM
+  // konfigurasikan PWM untuk LED pada pin yang ditentukan
   ledcAttach(ledPin, freq, resolution);
   
-  // if you want to attach a specific channel, use the following instead
-  //ledcAttachChannel(ledPin, freq, resolution, 0);
+  // jika ingin memilih channel PWM tertentu, gunakan baris ini:
+  // ledcAttachChannel(ledPin, freq, resolution, 0);
 }
  
 void loop(){
-  // Atur duty cycle ke 50% (127 dari 255 untuk resolusi 8-bit)
+  // atur duty cycle ke 0% (0 dari 255 untuk resolusi 8-bit)
   ledcWrite(ledPin, 0);
   delay(1000);
   
-  // Atur duty cycle ke 25% (64 dari 255)
+  // atur duty cycle ke 49% (125 dari 255 untuk resolusi 8-bit)
   ledcWrite(ledPin, 125);
   delay(1000);
   
-  // Atur duty cycle ke 75% (191 dari 255)
+  // atur duty cycle ke 100% (255 dari 255 untuk resolusi 8-bit)
   ledcWrite(ledPin, 255);
   delay(1000);
 }
