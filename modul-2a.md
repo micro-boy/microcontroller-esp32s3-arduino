@@ -763,6 +763,8 @@ Sekarang mari kita buat rangkaian untuk mengukur tingkat cahaya menggunakan **mo
 
 > **Catatan:** Kita hanya akan membaca nilai analog dari **AO**. Pin **DO** pada modul bisa digunakan jika ingin LED menyala/mati otomatis dari ambang batas hardware, tapi di sini kita pakai threshold di kode.
 
+
+📱 **Simulasi Online**: [Coba rangkaian ini di Wokwi](https://wokwi.com/projects/429549408530021377)
 ---
 
 #### Kode Program (menggunakan AO saja)
