@@ -747,7 +747,7 @@ Sekarang mari kita buat rangkaian untuk mengukur tingkat cahaya menggunakan **mo
 **Rangkaian:**
 
 <div align="center">
-  <img src="/mnt/data/3027cfa6-8be4-4b8d-9fe0-14e72eee5976.png" width="600">
+  <img src="https://github.com/user-attachments/assets/4fdbd123-c599-4dd1-b40f-cf0570e0984e" width="500">
   <p><em>Modul LDR dengan pin: VCC, GND, DO (digital), AO (analog)</em></p>
 </div>
 
